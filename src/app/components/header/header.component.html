@@ -1,7 +1,10 @@
 <header>
     <h1>{{ title }}</h1>
-    <app-button 
-        text="{{ showAddTask ? 'Close' : 'Add task' }}"
-        (btnClick)="toggleAddTask()"
+    <app-button
+    *ngIf="hasRoute('/tasks')"
+      text="{{ showAddTask ? 'Close' : 'Add task' }}"
+      (btnClick)="toggleAddTask()"
     ></app-button>
-</header>
+    <a routerLink="/how-this-works">How This Works</a>
+  </header>
+  

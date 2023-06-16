@@ -39,7 +39,7 @@
       "id": 6,
       "text": "Attend a meeting",
       "day": "June 21st at 2:00pm",
-      "reminder": false,
+      "reminder": true,
       "checked": false
     },
     {
@@ -47,14 +47,14 @@
       "text": "Pay bills",
       "day": "June 22nd at 9:30am",
       "reminder": false,
-      "checked": true
+      "checked": false
     },
     {
       "id": 8,
       "text": "Clean the house",
       "day": "June 23rd at 1:00pm",
       "reminder": false,
-      "checked": true
+      "checked": false
     }
   ]
 }
