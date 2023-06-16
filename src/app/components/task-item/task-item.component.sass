@@ -3,11 +3,54 @@
   margin: 10px
   padding: 15px 25px
   cursor: pointer
+  display: flex
+  align-items: center
+  justify-content: space-between
 
   &.reminder
-    border-left: 5px solid green
+    position: relative
 
-  h3
-    display: flex
-    align-items: center
-    justify-content: space-between
+    &:before,
+    &:after
+      content: ""
+      position: absolute
+      top: 0
+      bottom: 0
+      width: 20px
+
+    &:before
+      left: 0
+      background: linear-gradient(to right, purple, lavender)
+
+    &:after
+      right: 0
+      background: linear-gradient(to left, purple, lavender)
+
+  &.checked
+    background-color: lightgray
+
+    .text
+      color: gray
+      text-decoration: line-through
+
+    .icon
+      color: gray
+
+      .fa-square
+        &.checked
+          display: none
+
+      .fa-check-square
+        &.checked
+          display: inline-block
+.icon-checked
+  color: gray
+     
+.text-icon
+  display: flex
+  align-items: center
+
+.text
+  margin-left: 10px
+
+

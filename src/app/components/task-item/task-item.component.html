@@ -1,4 +1,22 @@
-<div class="task">
-    <h3>{{ task.text }} <fa-icon [icon]="faSquare"></fa-icon></h3>
-    <p>{{ task.day }}</p>
-</div>
+<div 
+[ngClass]="{reminder: task.reminder, checked: task.checked}" 
+class="task" 
+(dblclick)="onToggle(task)">
+    <div class="text-icon">
+      <fa-icon class="fa-lg"
+        (click)="onCheck(task)"
+        [icon]="task.checked ? faCheckSquare : faSquare"
+        [ngClass]="{'checked': task.checked, 'icon-checked': task.checked}"
+      ></fa-icon>
+      <div class="text">
+        <h3 [ngClass]="{'checked': task.checked}">{{ task.text }}</h3>
+        <p>{{ task.day }}</p>
+      </div>
+    </div>
+    <div class="icon fa-lg">
+      <fa-icon
+        (click)="onDelete(task)"
+        [icon]="faTrashCan"
+      ></fa-icon>
+    </div>
+  </div>
