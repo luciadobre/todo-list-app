@@ -4,43 +4,43 @@
       "id": 1,
       "text": "Buy groceries",
       "day": "June 16th at 10:00am",
-      "reminder": true,
+      "reminder": false,
       "checked": false
     },
     {
       "id": 2,
       "text": "Finish project",
       "day": "June 17th at 3:00pm",
-      "reminder": true,
+      "reminder": false,
       "checked": false
     },
     {
       "id": 3,
       "text": "Call a friend",
       "day": "June 18th at 11:30am",
-      "reminder": true,
+      "reminder": false,
       "checked": false
     },
     {
       "id": 4,
       "text": "Go for a run",
       "day": "June 19th at 8:00am",
-      "reminder": true,
+      "reminder": false,
       "checked": false
     },
     {
       "id": 5,
       "text": "Read a book",
       "day": "June 20th at 6:00pm",
-      "reminder": true,
+      "reminder": false,
       "checked": false
     },
     {
       "id": 6,
       "text": "Attend a meeting",
       "day": "June 21st at 2:00pm",
-      "reminder": true,
-      "checked": false
+      "reminder": false,
+      "checked": true
     },
     {
       "id": 7,
